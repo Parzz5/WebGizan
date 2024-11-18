@@ -1,0 +1,80 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url('image00.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button, .Buttom {
+    border-color: black;
+    border-radius: 5px;
+    width: 300px;
+    height: 45px;
+    margin: 10px 0; /* Margin vertikal untuk memberi jarak */
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+}
+
+.Button {
+    background-color: red;
+    color: white;
+}
+
+.Buttom {
+    background-color: white;
+}
+
+.h01 {
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gambar {
+    width: 200px; /* Lebar gambar */
+    height: 300px; /* Tinggi gambar */
+    object-fit: cover; /* Memastikan gambar terisi dengan proporsi */
+    margin-top: 20px;
+}
+
+@keyframes rgbColor {
+  0% { color: red; }
+  33% { color: blue; }
+  66% { color: green; }
+  100% { color: red; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.rgb {
+  font-size: 24px;
+  font-weight: bold;
+  animation: rgbColor 3s infinite, blink 1s infinite;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.p1 {
+  font-size: 10px;
+  font-weight: bold;
+}
